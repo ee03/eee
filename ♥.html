@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+
+ <body>
+
+  <meta charset="UTF-8">
+  <title>Sürpriz 🎁</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      text-align: center;
+    }
+
+    h1 {
+      margin-top: 30px;
+      color: #fff;
+    }
+
+    .menu {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 20px;
+      padding: 40px;
+    }
+
+    .card {
+      background: white;
+      padding: 40px;
+      border-radius: 20px;
+      cursor: pointer;
+      font-size: 20px;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+      background: #ffe4e1;
+    }
+
+    .content {
+      display: none;
+      padding: 30px;
+      color: white;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+<h1></h1>
+
+<div id="menu" class="menu">
+  <div class="card" onclick="showPage(1)">✨ Teşekkür Ederim </div>
+  <div class="card" onclick="showPage(2)">💜 Kız Kardeşim </div>
+  <div class="card" onclick="showPage(3)">🎶 Sana Özel</div>
+  <div class="card" onclick="showPage(4)">💌 Son Söz</div>
+</div>
+
+<div id="page1" class="content">
+  <h1>Teşekkür ederim </h1>
+  <p><h2>💕Öncelikle 8 milyar 3 milyon 678 bin 394 kişiden arkadaşın olarak beni seçtiğin için</h2></p>
+ <p><h2>💕 Bana aklının almayacağı bir güven duygusu yaşattığın için</h2></p>
+ <p><h2>💕 Arkadaşı olmayan o 14 yaşındaki küçük Elif'e dost olduğun için</h2></p>
+ <p><h2>💕 Tek bir kelimenle bana huzur verdiğin için </h2></p>
+ <p><h2>💕 Herkes gitse de senin kalacağını bildiğim için</h2></p>
+ <p><h2>💕 Asla başlasam da okuyamadığım o kitapları sevdirdiğin için</h2></p>
+ <p><h2>💕 Bana bir çok kez sarıldığın için </h2></p>
+ <p><h2>💕 En güzel yaşlarımı seninle geçirebildiğim için</h2></p> <br>
+ <p><h2>💕💕💕 SANA ÇOK TEŞEKKÜR EDERİMM GÜZELL KIZZ 💕💕💕</h2></p> 
+ <p><h2></h2></p>
+
+
+  <button onclick="goBack()">Geri</button>
+</div>
+
+<div id="page2" class="content">
+  <h1>💜 Kız Kardeşim 💜</h1>
+  <p><h2> Sen annelerimizin ortak olmasına gerek duymadığm kız kardeşimsin. <br><br> Hayattaki kötü her şeyden korumak isteyeceğim kız kardeşim. <br><br> Hep en iyilere layık kız kardeşim. <br><br> İnsanlar ailesini seçemez ama sen benim seçtiğim ailemsin Büşş <br><br>  İyi ki varsınnn hepp var ol. <br></h2></p>
+  
+  <button onclick="goBack()">Geri</button>
+</div>
+
+<div id="page3" class="content">
+  <h2></h2>
+  <p></p>
+  <!DOCTYPE html>
+<html lang="tr">
+
+
+<head>
+<meta charset="UTF-8">
+<title>Atan Kalp</title>
+<style>
+body {
+  height: 100vh;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f0f0f0;
+}
+
+.heart {
+  position: relative;
+  width: 100px;
+  height: 90px;
+  background-color: #ff4d6d;
+  transform: rotate(-45deg);
+  animation: beat 1s infinite;
+}
+
+.heart::before,
+.heart::after {
+  content: "";
+  position: absolute;
+  width: 100px;
+  height: 90px;
+  background-color: #ff4d6d;
+  border-radius: 50%;
+}
+
+.heart::before {
+  top: -50px;
+  left: 0;
+}
+
+.heart::after {
+  top: 0;
+  left: 50px;
+}
+
+/* Kalbin atma animasyonu */
+@keyframes beat {
+  0%, 100% {
+    transform: rotate(-45deg) scale(1);
+  }
+  25% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(-45deg) scale(1);
+  }
+  75% {
+    transform: rotate(-45deg) scale(1.1);
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="heart"></div>
+
+</body>
+</html> 
+
+
+<p><h2></h2></p>
+
+<br><br><br><br><br>
+  <button onclick="goBack()">Geri</button>
+</div>
+
+<div id="page4" class="content">
+  <h2>Son Söz 💌</h2>
+  <p> 20 Yaşında olduğu gibi yaşarsam kalbim ve bedenimle, ölürsem ruhum ve anılarımızla hep yanında oalcağım güzell kız <br><br> İYİİ Kİİ DOĞDUNNNNN  <br> İYİİİ Kİ VARSINNNNN  </p>
+
+  <button onclick="goBack()">Geri</button>
+</div>
+
+<script>
+  function showPage(pageNumber) {
+    document.getElementById("menu").style.display = "none";
+    document.getElementById("page" + pageNumber).style.display = "block";
+  }
+
+  function goBack() {
+    document.querySelectorAll('.content').forEach(p => p.style.display = 'none');
+    document.getElementById("menu").style.display = "grid";
+  }
+</script>
+ 
+<audio src="işiklari söndürseler bile.mp3"  controls type="audio/mpeg"></audio> 
+
+ 
+</body>
+</html>
+
